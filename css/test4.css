@@ -1,0 +1,235 @@
+@import "https://necolas.github.io/normalize.css/8.0.1/normalize.css";
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "work sans",sans-serif;
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body::after {
+content: '';
+width: 38%;
+    height: 29%;
+    background-color: #fc4482;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+body::before{
+    content: '';
+    width: 63%;
+    height: 29%;
+    background-color: #788cc3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.container{
+    width: 90%;
+    height: 80%;
+    background-color:#ffffff;
+}
+.container .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.container .content .image{
+    width: 50%;
+    height: 100%;
+}
+.container .content .image img{
+    width: 100%;
+    height: 100%;
+}
+.container .content .details-social{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.container .content .details-social .content1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container .content .details-social .details{
+    margin: 34%;
+    position: relative;
+}
+.container .content .details-social .details h4{
+    color: #788C93;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+.container .content .details-social .details hr{
+    border: 2px solid #f94280;
+    width: 73px;
+    display: inline-block;
+    position: absolute;
+    top: 22px;
+}
+.container .content .details-social .details form{
+    width: 300px;
+    height: 300px;
+}
+.container .content .details-social .details form .username1{
+    color: #788C93;
+    font-size: 17px;
+   font-weight: 500;
+   padding-right: 11px;
+}
+.container .content .details-social .details form .Username{
+    border-radius: 30px;
+    height: 45px;
+    padding: 10px;
+    width: 350px;
+    border: 2px solid #788C93;
+    margin-top: 10px;
+    margin-bottom: 28px;
+}
+.container .content .details-social .details form .password1{
+    color: #788C93;
+    font-size: 17px;
+   font-weight: 500;
+   padding-right: 15px;
+}
+.container .content .details-social .details form .password{
+    border-radius: 30px;
+    height: 45px;
+    padding: 10px;
+    width: 350px;
+    border: 2px solid #788C93;
+    margin-top: 10px;
+    margin-bottom: 28px;
+}
+.container .content .details-social .details form .remember{
+    accent-color: #e14d8b;
+}
+.container .content .details-social .details form .remember1{
+    color: #788C93;
+    font-weight: 450;
+    letter-spacing: -0.5px;
+}
+.container .content .details-social .details form .sing{
+    color: white;
+    background-color: #FF4584;
+    width: 350px;
+    height: 44px;
+    border-radius: 25px;
+    font-weight: 500;
+    border: 1px solid #FF4584;
+    margin-top: 10px;
+}
+.container .content .details-social .details a {
+color:#FF4584;
+}
+.container .content .details-social .details span{
+    color: #788C93;
+    letter-spacing: -0.6px;
+    font-weight: 500;
+}
+.container .content .details-social .social{
+    text-align: center;
+    margin-left: 50px;
+}
+.container .content .details-social .social h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #7B8385;
+}
+.container .content .details-social .social .icons{
+    font-size: 28px;
+    padding: 20px;
+}
+.container .content .details-social .social .icons a{
+    color: white;
+    border: 15px solid #5C7C89;
+    background-color: #5C7C89;
+    margin: 6px;
+    border-radius: 50%;
+}
+.container .content .details-social .social .icons a:first-child{
+    background-color: #FF4584;
+    border: 15px solid #FF4584;
+}
+.container .content .details-social .social .icons a i{
+    width: 32px;
+}
+@media (max-width: 1200px) {
+    .container .content .image img{
+        display:none;
+    }
+    .container .content .image{
+        display: none;
+    }
+    .container{
+        width: 50%;
+        background-color:#ffffff;
+        
+        
+    }
+    .container .content .details-social .social .icons {
+        padding: 0;
+        margin-top: 40px;
+    }
+  }
+  @media (max-width: 900px){
+    
+    body::after {
+        content: '';
+        width: 61%;
+    height: 17%;
+            background-color: #fc4482;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1
+        }
+        body::before {
+            content: '';
+            width: 39%;
+            height: 34%;
+    background-color: #788cc3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .container .content .details-social .content1 {
+    margin-right: 40px;
+  }
+    .container .content .details-social .social h2 {
+        font-size: 0;
+        font-weight: 600;
+        color: #7B8385;
+    }
+    .container .content .details-social .social h2::after{
+        content: "Social:";
+        font-size: 30px;
+        font-weight: 600;
+        color: #7B8385;
+    }
+    .container .content .details-social .social .icons a {
+        position: relative;
+    }
+    .container .content .details-social .social .icons a:first-child{
+        z-index: 2;
+    
+    }
+}
